@@ -1,0 +1,4 @@
+{
+    "connectionString": "mongodb://192.168.1.13:27017/social_network_project",
+    "secret": "MY_SECRET_KEY"
+}
