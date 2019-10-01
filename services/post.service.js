@@ -13,8 +13,9 @@ async function create(postParam) {
     if (!user) {
         throw 'User does not exists';
     }
-    postParam._userId = user.id;
+
     const post = new Post(postParam);
+    post._userId = user.id;
     //save post
     await post.save();
 
